@@ -1,12 +1,14 @@
 import './App.css';
 import logo from './logo.svg'
-import Ele from './views/demo.jsx'
+import Ele from './views/hello-word.jsx'
 import State from './views/state.jsx';
 import MyEvent from './views/event.jsx';
 import List from './views/list.jsx';
 import { MyForm, Res } from './views/form.jsx';
 import Wendu from './views/state-up';
 import { WelcomeDialog, SlotBox, SingUpDialog } from "./views/extend"
+import TheDemo from "./views/demo"
+import CodeSplit from "./views/code-split"
 
 const auther = {
   url: logo,
@@ -31,6 +33,8 @@ function App() {
         <SlotBox />
         <WelcomeDialog />
         <SingUpDialog />
+        <TheDemo />
+        <CodeSplit />
       </header>
     </div>
   );
