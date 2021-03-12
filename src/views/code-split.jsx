@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from 'react';
-import NormalButton from "@/components/button"
+import NormalButton from "@/components/common/button.jsx"
 
 // 动态import
 import { add } from "@/utils/math"
@@ -13,7 +13,7 @@ function importWhenUse() {
 importWhenUse()
 
 // 动态引入组件
-const LazyButton = lazy(() => import('@/components/button'))
+const LazyButton = lazy(() => import('@/components/common/button'))
 
 function CodeSplit() {
   return (

@@ -1,11 +1,11 @@
 import React from 'react';
 
-function About() {
+function Common() {
   return (
     <div>
-      this is about
+      Common
     </div>
   );
 }
 
-export default About;
+export default Common;

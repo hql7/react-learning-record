@@ -1,4 +1,8 @@
+
 // hello world 2021.03.03 weilan 
+import { Component } from "react";
+import Logo from "@/logo.svg"
+
 function Avater(props) {
   return (
     <img className="avater" src={props.user.url} alt={props.user.name} />
@@ -26,4 +30,25 @@ function Comment(props) {
   )
 }
 
-export default Comment
+class HelloWord extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      name: 'lilei',
+      text: '我一定要证明自己',
+      date: '2021.03.12'
+    }
+  }
+  render() {
+    let { name, text, date } = this.state
+    const user = {
+      name,
+      url: Logo
+    }
+    return (
+      <Comment auther={user} text={text} date={date} />
+    )
+  }
+}
+
+export default HelloWord

@@ -9,13 +9,13 @@ class Clock extends Component {
   }
 
   componentDidMount() {
-    /* this.Timer = setInterval(() => {
+    this.Timer = setInterval(() => {
       this.tick()
-    }, 1000) */
+    }, 1000)
   }
 
   componentWillUnmount() {
-    // clearInterval(this.Timer)
+    clearInterval(this.Timer)
   }
 
   tick() {
@@ -26,7 +26,7 @@ class Clock extends Component {
 
   render() {
     return (<div>
-      {this.state.date}
+      当前时间是：{ new Date(parseInt(this.state.date)).toLocaleString()}
     </div>)
   }
 }

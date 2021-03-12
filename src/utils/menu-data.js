@@ -13,7 +13,8 @@ const menuList = [
   },
   {
     id: '2', name: '高级指引', children: [
-      { id: '2-1', name: '代码分割', url: 'code-split' }
+      { id: '2-1', name: '代码分割', url: 'code-split' },
+      { id: '2-2', name: 'Context上下文', url: 'context' },
     ]
   }
 ]

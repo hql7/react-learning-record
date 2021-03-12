@@ -1,17 +1,26 @@
+html,
+body,
+#root,
 .App {
-  text-align: center;
-  background-color: #282c34;
-  color: white;
-  font-size: calc(10px + 2vmin);
+  height: 100%;
+  box-sizing: border-box;
+}
+.App {
+  display: flex;
+}
+.The-context {
+  flex: 1;
+  overflow: auto;
+  padding: 20px;
 }
 
-.App-logo {
+.avater {
   height: 40vmin;
   pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  .avater {
     animation: App-logo-spin infinite 20s linear;
   }
 }

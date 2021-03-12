@@ -1,15 +1,18 @@
 import { Link } from 'react-router-dom';
 import menuList from "@/utils/menu-data"
+import './index.min.css'
 
 function Item(props) {
   return (
-    <Link to={props.url}>{props.name}</Link>
+    <p className="menu-item">
+      <Link to={props.url}>{props.name}</Link>
+    </p>
   )
 }
 
 function Title(props) {
   return (
-    <h4>{props.name}</h4>
+    <h4 className="menu-title">{props.name}</h4>
   )
 }
 
@@ -18,7 +21,7 @@ function MenuModule({ name, children }) {
     <div>
       <Title name={name} />
       {
-        children.map(i => (<Item key={i.id} name={i.name} />))
+        children.map(i => (<Item key={i.id} name={i.name} url={i.url} />))
       }
     </div>
   )
@@ -26,7 +29,7 @@ function MenuModule({ name, children }) {
 
 function Menu() {
   return (
-    <div>
+    <div className="the-menu">
       {
         menuList.map(i => (<MenuModule key={i.id} name={i.name} children={i.children} />))
       }

@@ -66,7 +66,8 @@ class WenDu extends Component {
 }
 
 function transition(value, to) {
-  return to === 's' ? (value - 32) * 5 / 9 : (value * 9 / 5) + 32
+  if (value === '') return ''
+  return to === 'h' ? (value - 32) * 5 / 9 : (value * 9 / 5) + 32
 }
 
 export default WenDu;

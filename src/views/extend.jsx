@@ -83,12 +83,20 @@ class SingUpDialog extends Component {
     let msg = "this is a Class msg"
     let name = this.state.name
     return (
-      <Dialog title={title} msg={msg}>
-        <input type="text" value={name} onChange={this.handleChange} />
-        <button onClick={this.handleSignUp}>login</button>
-      </Dialog>
+      <div>
+        <h3>特例关系</h3>
+        <WelcomeDialog />
+        <h3>slot</h3>
+        <SlotBox />
+        <h3>组合</h3>
+        <Dialog title={title} msg={msg}>
+          <input type="text" value={name} onChange={this.handleChange} />
+          <button onClick={this.handleSignUp}>login</button>
+        </Dialog>
+      </div>
+
     )
   }
 }
 
-export { WelcomeDialog, SlotBox, SingUpDialog };
+export default SingUpDialog;

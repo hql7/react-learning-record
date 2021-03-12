@@ -67,8 +67,12 @@ class SearchArea extends Component {
     let checked = this.props.checked
     return (
       <Fragment>
-        <input type="text" value={value} onChange={this.handleIptChange} />
+        <label >
+          搜索框：
+          <input type="text" value={value} onChange={this.handleIptChange} />
+        </label>
         <label>
+          只看在售：
           <input type="checkbox" value={checked} onChange={this.handleCheckChange} />
         </label>
       </Fragment>

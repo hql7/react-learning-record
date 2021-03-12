@@ -67,18 +67,21 @@ class Res extends Component {
   render() {
     let { isGoing, num } = this.state
     return (
-      <form>
-        <label>
-          参与：
+      <div>
+        <form>
+          <label>
+            参与：
           <input type="text" name="isGoing" type="checkbox" checked={isGoing} onChange={this.handleChange} />
-        </label>
-        <label>
-          来宾人数：
+          </label>
+          <label>
+            来宾人数：
           <input type="text" name="num" type="number" value={num} onChange={this.handleChange} />
-        </label>
-      </form>
+          </label>
+        </form>
+        <MyForm />
+      </div>
     )
   }
 }
 
-export { MyForm, Res }
+export default Res
