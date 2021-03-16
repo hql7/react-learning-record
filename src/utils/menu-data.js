@@ -15,6 +15,10 @@ const menuList = [
     id: '2', name: '高级指引', children: [
       { id: '2-1', name: '代码分割', url: 'code-split' },
       { id: '2-2', name: 'Context上下文', url: 'context' },
+      { id: '2-3', name: '错误边界', url: 'error-boundaries' },
+      { id: '2-4', name: 'Refs转发', url: 'forwarding-refs' },
+      { id: '2-5', name: 'Fragments', url: 'fragments' },
+      { id: '2-6', name: '高阶组件', url: 'higher' },
     ]
   }
 ]
