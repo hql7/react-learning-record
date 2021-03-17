@@ -14,6 +14,11 @@ const ErrorBoundaries = lazy(() => import('@/views/error-boundaries'))
 const ForwardingRefs = lazy(() => import('@/views/forwarding-refs/index'))
 const Fragments = lazy(() => import('@/views/fragments/index'))
 const Higher = lazy(() => import('@/views/higher/index'))
+const IntegrationC = lazy(() => import('@/views/integration-c/index'))
+const InDepthJsx = lazy(() => import('@/views/in-depth-JSX/index'))
+const OptimizingPerformance = lazy(() => import('@/views/optimizing-performance/index'))
+const Portals = lazy(() => import('@/views/portals/index'))
+const Profiler = lazy(() => import('@/views/profiler/index'))
 
 function Routes() {
   return (
@@ -34,6 +39,11 @@ function Routes() {
         <Route path="/forwarding-refs" component={ForwardingRefs} />
         <Route path="/fragments" component={Fragments} />
         <Route path="/higher" component={Higher} />
+        <Route path="/integration-c" component={IntegrationC} />
+        <Route path="/in-depth-JSX" component={InDepthJsx} />
+        <Route path="/optimizing-performance" component={OptimizingPerformance} />
+        <Route path="/portals" component={Portals} />
+        <Route path="/profiler" component={Profiler} />
       </Switch>
     </Suspense>
   );

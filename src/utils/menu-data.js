@@ -19,6 +19,11 @@ const menuList = [
       { id: '2-4', name: 'Refs转发', url: 'forwarding-refs' },
       { id: '2-5', name: 'Fragments', url: 'fragments' },
       { id: '2-6', name: '高阶组件', url: 'higher' },
+      { id: '2-7', name: '与第三方库协同', url: 'integration-c' },
+      { id: '2-8', name: '深入JSX', url: 'in-depth-JSX' },
+      { id: '2-9', name: '性能优化', url: 'optimizing-performance' },
+      { id: '2-10', name: 'Portals', url: 'portals' },
+      { id: '2-11', name: 'Profiler', url: 'profiler' },
     ]
   }
 ]
