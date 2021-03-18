@@ -24,7 +24,15 @@ const menuList = [
       { id: '2-9', name: '性能优化', url: 'optimizing-performance' },
       { id: '2-10', name: 'Portals', url: 'portals' },
       { id: '2-11', name: 'Profiler', url: 'profiler' },
+      { id: '2-12', name: 'Refs&DOM', url: 'refs-dom' },
+      { id: '2-13', name: 'Render&Props', url: 'render-props' },
+      { id: '2-14', name: '严格模式', url: 'strict-mode' },
+      { id: '2-15', name: 'props类型检查', url: 'prop-types' },
+      { id: '2-16', name: '非受控组件', url: 'uncontrolled-components' },
     ]
+  },
+  {
+    id: '3', name: "API", children: []
   }
 ]
 

@@ -19,6 +19,11 @@ const InDepthJsx = lazy(() => import('@/views/in-depth-JSX/index'))
 const OptimizingPerformance = lazy(() => import('@/views/optimizing-performance/index'))
 const Portals = lazy(() => import('@/views/portals/index'))
 const Profiler = lazy(() => import('@/views/profiler/index'))
+const RefsDOM = lazy(() => import('@/views/refs-dom/index'))
+const RenderProps = lazy(() => import('@/views/render-props/index'))
+const StrictMode = lazy(() => import('@/views/strict-mode/index'))
+const PropTypes = lazy(() => import('@/views/prop-types/index'))
+const UncontrolledComponents = lazy(() => import('@/views/uncontrolled-components/index'))
 
 function Routes() {
   return (
@@ -44,6 +49,11 @@ function Routes() {
         <Route path="/optimizing-performance" component={OptimizingPerformance} />
         <Route path="/portals" component={Portals} />
         <Route path="/profiler" component={Profiler} />
+        <Route path="/refs-dom" component={RefsDOM} />
+        <Route path="/render-props" component={RenderProps} />
+        <Route path="/strict-mode" component={StrictMode} />
+        <Route path="/prop-types" component={PropTypes} />
+        <Route path="/uncontrolled-components" component={UncontrolledComponents} />
       </Switch>
     </Suspense>
   );

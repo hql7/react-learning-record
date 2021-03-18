@@ -19,6 +19,12 @@ body,
   pointer-events: none;
 }
 
+h3 {
+  color: #333;
+  font-size: 16px;
+  line-height: 36px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .avater {
     animation: App-logo-spin infinite 20s linear;
