@@ -24,6 +24,7 @@ const RenderProps = lazy(() => import('@/views/render-props/index'))
 const StrictMode = lazy(() => import('@/views/strict-mode/index'))
 const PropTypes = lazy(() => import('@/views/prop-types/index'))
 const UncontrolledComponents = lazy(() => import('@/views/uncontrolled-components/index'))
+const IntroducingHook = lazy(() => import('@/views/introducing-hook/index'))
 
 function Routes() {
   return (
@@ -54,6 +55,7 @@ function Routes() {
         <Route path="/strict-mode" component={StrictMode} />
         <Route path="/prop-types" component={PropTypes} />
         <Route path="/uncontrolled-components" component={UncontrolledComponents} />
+        <Route path="/introducing-hook" component={IntroducingHook} />
       </Switch>
     </Suspense>
   );
