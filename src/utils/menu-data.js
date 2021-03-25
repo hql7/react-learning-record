@@ -37,6 +37,15 @@ const menuList = [
   {
     id: '4', name: "Hook", children: [
       { id: '4-1', name: 'Hook简介', url: 'introducing-hook' },
+      { id: '4-2', name: 'Hook概览', url: 'hooks-overview' },
+      { id: '4-3', name: '使用State Hook', url: 'hook-state' },
+      { id: '4-4', name: '使用Effect Hook', url: 'hooks-effect' },
+      { id: '4-5', name: 'Hook 规则', url: 'hooks-rules' },
+    ]
+  },
+  {
+    id: '5', name: "小例子", children: [
+      { id: '5-1', name: 'TodoList', url: 'todo-list' },
     ]
   },
 ]

@@ -25,6 +25,11 @@ const StrictMode = lazy(() => import('@/views/strict-mode/index'))
 const PropTypes = lazy(() => import('@/views/prop-types/index'))
 const UncontrolledComponents = lazy(() => import('@/views/uncontrolled-components/index'))
 const IntroducingHook = lazy(() => import('@/views/introducing-hook/index'))
+const HooksOverview = lazy(() => import('@/views/hooks-overview/index'))
+const HookState = lazy(() => import('@/views/hook-state/index'))
+const HooksEffect = lazy(() => import('@/views/hooks-effect/index'))
+const HooksRules = lazy(() => import('@/views/hooks-rules/index'))
+const TodoList = lazy(() => import('@/views/todo-list/index'))
 
 function Routes() {
   return (
@@ -56,6 +61,11 @@ function Routes() {
         <Route path="/prop-types" component={PropTypes} />
         <Route path="/uncontrolled-components" component={UncontrolledComponents} />
         <Route path="/introducing-hook" component={IntroducingHook} />
+        <Route path="/hooks-overview" component={HooksOverview} />
+        <Route path="/hook-state" component={HookState} />
+        <Route path="/hooks-effect" component={HooksEffect} />
+        <Route path="/hooks-rules" component={HooksRules} />
+        <Route path="/todo-list" component={TodoList} />
       </Switch>
     </Suspense>
   );
