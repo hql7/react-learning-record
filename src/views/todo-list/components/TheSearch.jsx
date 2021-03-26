@@ -7,6 +7,7 @@ function TheSearch(props) {
   return (
     <div className="m-search">
       <Input
+        value={props.value}
         placeholder={placeholder}
         onChange={e => props.searchChange(e.target.value)}
         onPressEnter={e => props.searchEnter(e.target.value)} />

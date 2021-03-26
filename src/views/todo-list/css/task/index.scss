@@ -1,0 +1,26 @@
+.task-box {
+  display: flex;
+  line-height: 32px;
+  > .task-name {
+    flex: 1;
+    overflow: hidden;
+    color: #606266;
+  }
+  > .done-task {
+    text-decoration: line-through;
+  }
+  .icon-task {
+    font-size: 18px;
+    padding: 5px;
+    cursor: pointer;
+  }
+  .icon-left-un {
+    color: #1890ff;
+  }
+  .icon-right-un {
+    color: #f5222d;
+  }
+  .icon-task-fi {
+    color: #999;
+  }
+}
