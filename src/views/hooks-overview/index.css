@@ -1,0 +1,12 @@
+.parent {
+  width: 200px;
+  height: 100px;
+  background-color: aqua;
+}
+
+.parent > .child {
+  margin-top: 20%;
+  margin-left: 10%;
+  height: 50%;
+  background-color: brown;
+}
