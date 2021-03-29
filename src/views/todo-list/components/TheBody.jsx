@@ -3,29 +3,29 @@ import '../css/body/index.min.css'
 import TheTask from "./TheTask"
 
 function TheBody(props) {
-  const { selfProps, unfinishedTasks, finishedTasks, handleTransferData, handleDelTask } = props;
-  if (unfinishedTasks.length || finishedTasks.length) {
+  const { selfProps, unfinishedTasks, finishedTasks, searchKey, ...rest } = props;
+  const myUnfinishedTasks = unfinishedTasks.filter(i => i[selfProps.name].indexOf(searchKey) !== -1)
+  const myFinishedTasks = finishedTasks.filter(i => i[selfProps.name].indexOf(searchKey) !== -1)
+  if (myUnfinishedTasks.length || myFinishedTasks.length) {
     return (
       <ul className="body-tasks">
         {
-          unfinishedTasks.map(i => (
+          myUnfinishedTasks.map(i => (
             <TheTask
               key={i[selfProps.id]}
-              item={i}
               selfProps={selfProps}
-              handleTransferData={handleTransferData}
-              handleDelTask={handleDelTask}
+              item={i}
+              {...rest}
               done={false} />
           ))
         }
         {
-          finishedTasks.map(i => (
+          myFinishedTasks.map(i => (
             <TheTask
               key={i[selfProps.id]}
-              item={i}
               selfProps={selfProps}
-              handleTransferData={handleTransferData}
-              handleDelTask={handleDelTask}
+              item={i}
+              {...rest}
               done />
           ))
         }
@@ -38,6 +38,5 @@ function TheBody(props) {
     </div>
   );
 }
-
 
 export default TheBody;
