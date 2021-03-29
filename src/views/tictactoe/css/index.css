@@ -1,0 +1,28 @@
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 260px auto;
+  width: 150px;
+  height: 150px;
+  border-top: 1px solid #c4c4c4;
+  border-left: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.box > .grid {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #c4c4c4;
+  border-right: 1px solid #c4c4c4;
+  width: 33%;
+  height: 33%;
+  box-sizing: border-box;
+}
+
+.box > .grid > .value {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}

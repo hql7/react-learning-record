@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../css/body/index.min.css'
 import TheTask from "./TheTask"
 
 function TheBody(props) {
-  const { selfProps, unfinishedTasks, finishedTasks, searchKey, ...rest } = props;
+  const { selfProps, unfinishedTasks, finishedTasks, searchKey, handleTransferData, handleDelTask } = props;
   const myUnfinishedTasks = unfinishedTasks.filter(i => i[selfProps.name].indexOf(searchKey) !== -1)
   const myFinishedTasks = finishedTasks.filter(i => i[selfProps.name].indexOf(searchKey) !== -1)
   if (myUnfinishedTasks.length || myFinishedTasks.length) {
@@ -13,9 +13,9 @@ function TheBody(props) {
           myUnfinishedTasks.map(i => (
             <TheTask
               key={i[selfProps.id]}
-              selfProps={selfProps}
-              item={i}
-              {...rest}
+              name={i[selfProps.name]}
+              onTransfer={() => handleTransferData(i)}
+              onDelete={() => handleDelTask(i)}
               done={false} />
           ))
         }
@@ -23,9 +23,9 @@ function TheBody(props) {
           myFinishedTasks.map(i => (
             <TheTask
               key={i[selfProps.id]}
-              selfProps={selfProps}
-              item={i}
-              {...rest}
+              name={i[selfProps.name]}
+              onTransfer={() => handleTransferData(i)}
+              onDelete={() => handleDelTask(i)}
               done />
           ))
         }

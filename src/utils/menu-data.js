@@ -46,6 +46,7 @@ const menuList = [
   {
     id: '5', name: "小例子", children: [
       { id: '5-1', name: 'TodoList', url: 'todo-list' },
+      { id: '5-2', name: '井字棋', url: 'tictactoe' },
     ]
   },
 ]
