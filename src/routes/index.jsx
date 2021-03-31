@@ -31,6 +31,8 @@ const HooksEffect = lazy(() => import('@/views/hooks-effect/index'))
 const HooksRules = lazy(() => import('@/views/hooks-rules/index'))
 const TodoList = lazy(() => import('@/views/todo-list/index'))
 const Tictactoe = lazy(() => import('@/views/tictactoe/index'))
+const PublishSubscribe = lazy(() => import('@/views/publish-subscribe/index'))
+const ReduxView = lazy(() => import('@/views/redux-view/index'))
 
 function Routes() {
   return (
@@ -68,6 +70,8 @@ function Routes() {
         <Route path="/hooks-rules" component={HooksRules} />
         <Route path="/todo-list" component={TodoList} />
         <Route path="/tictactoe" component={Tictactoe} />
+        <Route path="/publish-subscribe" component={PublishSubscribe} />
+        <Route path="/redux-view" component={ReduxView} />
       </Switch>
     </Suspense>
   );

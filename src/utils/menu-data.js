@@ -47,6 +47,8 @@ const menuList = [
     id: '5', name: "小例子", children: [
       { id: '5-1', name: 'TodoList', url: 'todo-list' },
       { id: '5-2', name: '井字棋', url: 'tictactoe' },
+      { id: '5-3', name: '发布订阅', url: 'publish-subscribe' },
+      { id: '5-4', name: 'redux初探', url: 'redux-view' },
     ]
   },
 ]
